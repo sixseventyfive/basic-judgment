@@ -1,0 +1,4 @@
+create game to play with multiple players
+make ai players as well
+evaluate the players decision, i.e. you should have hit, you stood
+add mnemonic to display when checking the rules i.e. you should have hit, remember '**insert easily remembered rule here**'
