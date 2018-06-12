@@ -30,6 +30,8 @@ class PlayerTest(unittest.TestCase):
 
 if __name__ == '__main__':
     #unittest.main()
+    dealer = b.Player('dealer')
+    print(dealer.hand)
     print('test1', end='\r')
     time.sleep(1)
     print('test2', end='\r')

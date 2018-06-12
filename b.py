@@ -97,11 +97,12 @@ if __name__ == '__main__':
         player.hit()
         player.hit()
         print('dealer draws {}'.format(dealer.hand))
-        p_current = print('You have {} ({})'.format(player.hand, player.score()))
+        p_current = print('You have {} ({})'.format(player.hand,
+                                                    player.score()))
         p_current
         h = input('Would you like to hit or stand?\n')
         if h[0] == 'H' or h[0] == 'h':
-             player.hit()
+            player.hit()
         os.system('cls')
         print('dealer has {}'.format(dealer.hand))
         p_current
