@@ -1,4 +1,7 @@
+import os
+import time
 import unittest
+import sys
 import b
 
 
@@ -26,7 +29,13 @@ class PlayerTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    #unittest.main()
+    print('test1', end='\r')
+    time.sleep(1)
+    print('test2', end='\r')
+    print('test3')
+    time.sleep(2)
+    os.system('cls')
 #dealer = b.Player('Dealer')
 #player1 = b.Player(input('What is your name?'))
 #print(dealer.hand)

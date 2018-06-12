@@ -1,4 +1,6 @@
+import os
 from random import choice
+import sys
 
 
 class Player:
@@ -77,7 +79,35 @@ def rules(hand, dealer_hand):
         pass
 
 
-#if __name__ == '__main__':
+def printer(txt):
+    print(txt, end='r')
+
+
+if __name__ == '__main__':
+    dealer = Player('dealer')
+    player = Player(input('What is your name?\n'))
+    os.system('cls')
+    play = True
+    round = 1
+    wins = 0
+    while play:
+        print("Let's Play!")
+        print('Round {}'.format(round))
+        dealer.hit()
+        player.hit()
+        player.hit()
+        print('dealer draws {}'.format(dealer.hand))
+        p_current = print('You have {} ({})'.format(player.hand, player.score()))
+        p_current
+        h = input('Would you like to hit or stand?\n')
+        if h[0] == 'H' or h[0] == 'h':
+             player.hit()
+        os.system('cls')
+        print('dealer has {}'.format(dealer.hand))
+        p_current
+        round += 1
+        play = False
+
 #    play = 'y'
 #    win = 0
 #    draw = 0
