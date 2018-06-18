@@ -79,7 +79,13 @@ def rules(hand, dealer_hand):
         pass
 
 
-def printer(txt):
+class Screen:
+    width = 80
+    height = 80
+    def __init__:
+        os.system('cls')
+        header = '-' * width +'\n'
+
     print(txt, end='r')
 
 
